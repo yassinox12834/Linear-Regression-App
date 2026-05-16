@@ -36,7 +36,7 @@ class App(tk.Tk):
                    command=self.restart_app).pack(anchor="ne", padx=10, pady=5)
 
         self.main_container = tk.Frame(self)
-        self.main_container.pack(fill="x", padx=20, pady=20)
+        self.main_container.pack(fill="x", padx=20, pady=10)
         self.main_container.columnconfigure(1, weight=1, minsize=460)
         self.main_container.columnconfigure(0, weight=1)
         self.main_container.rowconfigure(0, weight=1)
@@ -241,10 +241,10 @@ class App(tk.Tk):
         # row 0 : metrics
         self.results_frame = tk.Frame(self)
         self.results_frame.columnconfigure(tuple(range(5)), weight=1)
-        self.results_frame.pack(padx=20, pady=10, fill="x", expand=True)
+        self.results_frame.pack(padx=20,pady=5, fill="x", expand=True)
         self.mse_label = ttk.Label(self.results_frame, style="Custom3.TLabel",
                                    text=f"MSE : {self.report['MSE']:.4f}")
-        self.mse_label.pack(side="left", padx=20)
+        self.mse_label.pack(side="left", padx=10)
 
         self.r_2_label = ttk.Label(self.results_frame, style="Custom3.TLabel",
                                    text=f"r_2 score : {self.report['R2']:.4f}")
@@ -278,7 +278,7 @@ class App(tk.Tk):
         def make_picker(parent, label_text, attr, default_colour, col):
             """Creates a label + preview square + button in one grid column group."""
             ttk.Label(parent, style="Custom3.TLabel",
-                      text=label_text).grid(row=0, column=col*3, padx=(20, 5), pady=10)
+                      text=label_text).grid(row=0, column=col*3, padx=(10, 5), pady=5)
 
             preview = tk.Label(parent, background=default_colour, width=3, relief="solid")
             preview.grid(row=0, column=col*3 + 1, padx=(0, 5))
@@ -290,7 +290,7 @@ class App(tk.Tk):
         self.colours_frame = tk.Frame(self)
         for i in range(9):
             self.colours_frame.columnconfigure(i, weight=1)
-        self.colours_frame.pack(fill="x", padx=20, pady=20)        
+        self.colours_frame.pack(fill="x", padx=10, pady=5)        
         self.columns_frame.columnconfigure(1, weight=1)
         self.columns_frame.columnconfigure(3, weight=1)
 
@@ -301,9 +301,52 @@ class App(tk.Tk):
         self.show_graphic_button = ttk.Button(
             self, style="Custom2.TButton",
             text="Show graph", command=lambda: self.graph_building())
-        self.show_graphic_button.pack(pady=20)
+        self.show_graphic_button.pack(pady=1)
+        self.predict_frame = tk.Frame(self)
+        self.predict_frame.pack(padx=20, pady=2, fill="x")
+
+        for i in range(3):
+            self.predict_frame.columnconfigure(i, weight=1)
+
+        self.prediction_entry = ttk.Entry(
+            self.predict_frame,
+            style="Custom2.TButton"
+        )
+        self.prediction_entry.grid(row=0, column=0, padx=5, pady=2, sticky="ew")
+
+        self.predict_button = ttk.Button(
+            self.predict_frame,
+            text="Predict",
+            style="Custom2.TButton",
+            command=self.do_predict        # ← function object, no ()
+        )
+        self.predict_button.grid(row=0, column=1, padx=5, pady=2)
+
+        self.prediction_label = ttk.Label(
+            self.predict_frame,
+            text="Prediction : None",
+            style="Custom3.TLabel"
+        )
+        self.prediction_label.grid(row=0, column=2, padx=5, pady=2, sticky="w")
 
 
+    def do_predict(self):
+        raw = self.prediction_entry.get().strip()
+        try:
+            if len(self.x_cols) == 1:
+                values = [float(raw)]
+            else:
+                parts = raw.split(";")
+                if len(parts) != 2:
+                    messagebox.showerror("Error", "Enter two values separated by ';' for 2-feature models.")
+                    return
+                values = [float(p.strip())  for p in parts]
+        except ValueError:
+            messagebox.showerror("Error", "Please enter a valid number.")
+            return
+
+        result = self.tmodel.predict(values)
+        self.prediction_label.config(text=f"Prediction : {result:.4f}")
     def graph_building(self):
         """Build and show the regression plot, or warn if one is already open."""
         if hasattr(self, "current_fig") and plt.fignum_exists(self.current_fig.number):
@@ -327,6 +370,6 @@ class App(tk.Tk):
         )
         self.show_graphic_button.state(["disabled"])
 
-
+    
 app = App()
 app.mainloop()

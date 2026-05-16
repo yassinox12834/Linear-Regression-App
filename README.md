@@ -97,6 +97,21 @@ If you want to download the graph by any chance, click on the button at the bott
 
 
 
+### Predicting vales :
+
+Henceforth, this app will also enable you to predict the values that you enter yourself at the bottom of the interface. It does not matter whether it is one or two parameters; you just have to use a semi-colon when entering two parameters :
+
+![image](images\predict_one_parameter.png)
+    With one parameter.
+
+
+
+![image](images\predict_two_parameters.png)
+    With two parameters.
+
+
+
+
 ## Requirements :
 > - Python 3.11+
 > - Scikit-learn: The module used to train models and make predictions. 
@@ -269,7 +284,7 @@ Il vous suffit de cliquer sur le bouton "Pick" et de choisir la couleur souhait�
  
 ### Télécharger le graphique
  
-Pour télécharger le graphique, cliquez sur le bouton en bas de la fenêtre du graphique :
+Si jamais vous voulez télécharger le graphique, cliquez sur le bouton en bas de la fenêtre du graphique :
  
 ![image](images/image.png)
  
@@ -290,6 +305,18 @@ Pour télécharger le graphique, cliquez sur le bouton en bas de la fenêtre du 
 > py -(version) -m pip install -r requirements.txt
 > ```
 > ![image](images/image_teminal.png)
+
+### Prédiction de valeurs :
+
+Désormais, cette application vous permettra également de prédire les valeurs que vous saisissez vous-même en bas de l'interface. Peu importe qu'il s'agisse d'un ou de deux paramètres ; il vous suffit d'utiliser un point-virgule lorsque vous saisissez deux paramètres.
+
+![image](images\predict_one_parameter.png)
+    Avec un seul paramètre.
+
+![image](images\predict_one_parameter.png)
+    Avec deux paramètres.
+
+
  
 ## Fonctionnement
  

@@ -46,7 +46,7 @@ class Analyser:
         }
         return report
     
-    def predict(self, value):
-        """"This method is for predicting values you insert yourself, which are not in the CSV"""
-        value = np.array(value).reshape(1, -1)
-        return self.model.predict(value)[0]
+    def predict(self, values:list|tuple):
+        """This method is for predicting values you insert yourself, which are not in the CSV"""
+        arr = np.array(values).reshape(1, -1)
+        return self.model.predict(arr)[0]

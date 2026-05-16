@@ -20,6 +20,13 @@ All notable changes to this project are documented here.
 - Application restart button.
 
 
+## [1.1.0] - 2026-05-16
+
+### Added
+- A spot added at the bottom of the interface to predict values ;
+- Bug fixed in **model.py** in the *predict* function.
+
+
 # Changelog (In french) :
  
 Toutes les modifications notables de ce projet sont documentées ici.
@@ -39,4 +46,12 @@ Toutes les modifications notables de ce projet sont documentées ici.
 - Graphique 3D avec plan de régression ;
 - Personnalisation des couleurs (pente, données d'entraînement, données de test) ;
 - Bouton de redémarrage de l'application.
+
  
+
+## [1.1.0] - 2026-05-16
+
+### Ajouté
+
+- Endroit ajouté pour prédire des valeurs en bas de l'interface ;
+- Bug corrigé dans **model.py** dans la fonction *predict*.
