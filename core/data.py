@@ -22,27 +22,23 @@ class DataHandler:
         dropped = before - len(self.df)
         return dropped
 
-    def get_columns(self, y: str, x: str, x_2: str = None):
+    def get_columns(self, y: str, x_cols: list):
         """
-        Return target (y) and feature(s) (x, optional x_2)
+        Returns:
+            y_column : numpy array as well as : X        : matrix of features
         """
 
         if self.df is None:
             raise ValueError("You must call load_data() first")
 
-
-        for col in [y, x, x_2]:
-            if col is not None and col not in self.df.columns:
+        for col in [y] + x_cols:
+            if col not in self.df.columns:
                 raise ValueError(f"Column '{col}' not found in dataset")
 
         y_column = self.df[y].to_numpy()
-        x_column = self.df[x].to_numpy()
+        X = self.df[x_cols].to_numpy()
 
-        if x_2 is not None:
-            x_column2 = self.df[x_2].to_numpy()
-            return y_column, x_column, x_column2
-
-        return y_column, x_column  
+        return y_column, X
 
 
 

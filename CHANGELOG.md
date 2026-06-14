@@ -24,8 +24,24 @@ All notable changes to this project are documented here.
 
 ### Added
 - A spot added at the bottom of the interface to predict values ;
-- Bug fixed in **model.py** in the *predict* function.
 
+### Fixed
+- Fixed a bug in the predict function of model.py.
+
+
+## [2.0.0] - 2026-06-14
+
+### Added
+- Support for more than two features (up to 10).
+- Prediction-vs-actual graph with an ideal reference line when visualisation in higher dimensions is not possible.
+
+### Changed
+- Complete redesign of the user interface while still using ttk.
+- Most of the codebase has been adapted to support multiple features.
+- Graph behaviour now changes automatically when more than two features are selected.
+
+#### Acknowledgements
+I admit having used AI to create a visually appealing design, as designing one entirely by myself would have been rather time-consuming.
 
 # Changelog (In french) :
  
@@ -52,6 +68,22 @@ Toutes les modifications notables de ce projet sont documentées ici.
 ## [1.1.0] - 2026-05-16
 
 ### Ajouté
-
 - Endroit ajouté pour prédire des valeurs en bas de l'interface ;
 - Bug corrigé dans **model.py** dans la fonction *predict*.
+
+
+
+## [2.0.0] - 2026-06-14
+
+### Ajouté
+- Possibilité d'utiliser plus de deux variables explicatives (jusqu'à 10).
+- Ajout d'un graphique comparant les valeurs prédites aux valeurs réelles, accompagné d'une ligne de référence idéale lorsque la visualisation en dimensions supérieures n'est pas possible.
+
+### Modifié
+- Refonte complète de l'interface utilisateur, tout en conservant ttk.
+- Une grande partie du code a été adaptée afin de prendre en charge plusieurs variables explicatives.
+- Le comportement du graphique s'adapte désormais automatiquement lorsque plus de deux variables explicatives sont sélectionnées.
+
+
+#### Reconnaissance
+J'avoue avoir eu recours à l'IA pour créer un design visuellement attractif, car le concevoir entièrement moi-même serait une perte de temps.
