@@ -43,6 +43,13 @@ All notable changes to this project are documented here.
 #### Acknowledgements
 I admit having used AI to create a visually appealing design, as designing one entirely by myself would have been rather time-consuming.
 
+
+## [2.0.1] - 2026-06-16
+
+### Fixed
+- Replaced backslashes with forward slashes in image paths so that images now load correctly.
+
+
 # Changelog (In french) :
  
 Toutes les modifications notables de ce projet sont documentées ici.
@@ -87,3 +94,8 @@ Toutes les modifications notables de ce projet sont documentées ici.
 
 #### Reconnaissance
 J'avoue avoir eu recours à l'IA pour créer un design visuellement attractif, car le concevoir entièrement moi-même serait une perte de temps.
+
+## [2.0.1] - 2026-06-16
+
+### Corrigé
+- Remplacement des antislashs (« \ ») par des slashs (« / ») dans les chemins d'accès des images afin qu'elles se chargent désormais correctement.
