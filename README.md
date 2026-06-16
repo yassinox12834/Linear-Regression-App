@@ -6,7 +6,7 @@ This is a small application that allows you to **see how powerful your model is*
 
 >The purpose of linear regression is to predict **the value of something** (often represented on the *y-axis*) using **one or more parameters** (often represented on the *x-axis*).
 
-![image](images\1Images\Figure_1.png)
+![image](images/1Images/Figure_1.png)
 
 >- The slope is the regression line shown in red.
 >- The intercept is the value of the y-axis when x = 0.
@@ -15,7 +15,7 @@ This is a small application that allows you to **see how powerful your model is*
 
 We can even add another parameter and represent the regression using a three-dimensional graph, like this:
 
-![image](images\1Images\Figure_2.png)
+![image](images/1Images/Figure_2.png)
 
 Nevertheless, we unfortunately cannot represent the regression with more than two features because humans are unable to see in four dimensions (or more) ! 
 ## Features :
@@ -44,37 +44,37 @@ python main.py
 * You need to either choose a CSV file through the "choose CSV" button or paste a CSV-file path by clicking on the second RadioButton :
 
 
-![image](images\2Images\pick_csv.png) 
+![image](images/2Images/pick_csv.png) 
 
 
 
-![image](images\2Images\pick_csv2.png) 
+![image](images/2Images/pick_csv2.png) 
 
 
 Or :
 
 
-![image](images\2Images\pick_csv_bypath.png) 
+![image](images/2Images/pick_csv_bypath.png) 
     *and click on the confirm button and please remove the parentheses !*
 
 #### Insert the independant varables :
 Now that the CSV file is loaded, let's **insert the independent variables** (The column(s) which will predict the *Y axis*), you can refer to the CSV preview ; when you have finished, click on the **"confirm"** button ! :
 
-![image](images\2Images\treeview_of_csv.png)
+![image](images/2Images/treeview_of_csv.png)
     *Example of a treeview*
 
 
 
 
-![image](images\2Images\features_2D.png)
+![image](images/2Images/features_2D.png)
     *Note that string values are not valid and will raise an error*
 
 
-![image](images\2Images\features_3D.png)
+![image](images/2Images/features_3D.png)
     *In 3D (2 features)*
 
 
-![image](images\2Images\features_mt3D.png)
+![image](images/2Images/features_mt3D.png)
     *With more than 2 features*
 
 
@@ -83,7 +83,7 @@ Afterwards, let's set the colours of our future graph :
 
 
 
-![image](images\2Images\choosing_colours2.png)
+![image](images/2Images/choosing_colours2.png)
     *You just have to click on the "pick" button and choose the colour like that.*
 
 
@@ -91,7 +91,7 @@ Afterwards, let's set the colours of our future graph :
 Please note that if you have inserted more than two features, it is normal to be able to customise only two colours, as the graph will not actually display the real regression. Instead, it will compare the predicted and actual values on a 2D graph.
 
 
-![image](images\2Images\colours_choice_mt3D.png) 
+![image](images/2Images/colours_choice_mt3D.png) 
 
 
 
@@ -114,15 +114,15 @@ Please note that if you have inserted more than two features, it is normal to be
 
 ##### Small example (Image at the beginning) :
 
-![image](images\1Images\Figure_1.png)
+![image](images/1Images/Figure_1.png)
     *In 2D*
 
 
-![image](images\2Images\graph_example_3D.png)
+![image](images/2Images/graph_example_3D.png)
     *In 3D*
 
 
-![image](images\2Images\metrics_3D(2).png)
+![image](images/2Images/metrics_3D(2).png)
     *Comparing graph (more than 2 features)*
 
 
@@ -133,7 +133,7 @@ If you want to download the graph by any chance, click on the button at the bott
 
 
 
-![image](images\1Images\image.png)
+![image](images/1Images/image.png)
 
 
 
@@ -141,12 +141,12 @@ If you want to download the graph by any chance, click on the button at the bott
 
 This app will also enable you to predict the values that you enter yourself at the bottom of the interface. No matter the number of parameters; you just have to use a semi-colon when entering several parameters :
 
-![image](images\2Images\predicting_values2D.png)
+![image](images/2Images/predicting_values2D.png)
     *With one parameter.*
 
 
 
-![image](images\2Images\predicting_valuesmt3D.png)
+![image](images/2Images/predicting_valuesmt3D.png)
     *With more parameters.*
 
 
@@ -167,7 +167,7 @@ This app will also enable you to predict the values that you enter yourself at t
 >```bash
 >py -(the_version) -m pip install -r requirements.txt
 >```
-> ![image](images\1Images\image_teminal.png)
+> ![image](images/1Images/image_teminal.png)
 
 
 ## How it works :
@@ -276,7 +276,7 @@ Il s'agit d'une petite application qui vous permet de **voir à quel point votre
 
 >L'objectif de la régression linéaire est de prédire **la valeur de quelque chose** (souvent représentée sur l'*axe y*) à partir **d'un ou plusieurs paramètres** (souvent représentés sur l'*axe x*).
 
-![image](images\1Images\Figure_1.png)
+![image](images/1Images/Figure_1.png)
 
 >- La pente est la droite de régression affichée en rouge.
 >- L'ordonnée à l'origine est la valeur de l'axe y lorsque x = 0.
@@ -285,7 +285,7 @@ Il s'agit d'une petite application qui vous permet de **voir à quel point votre
 
 On peut même ajouter un autre paramètre et représenter la régression à l'aide d'un graphique en trois dimensions, comme ceci :
 
-![image](images\1Images\Figure_2.png)
+![image](images/1Images/Figure_2.png)
 
 Néanmoins, nous ne pouvons malheureusement pas représenter la régression avec plus de deux variables, car les êtres humains sont incapables de voir en quatre dimensions (ou plus) !
 
@@ -315,37 +315,37 @@ python main.py
 * Vous devez soit choisir un fichier CSV via le bouton "choose CSV", soit coller un chemin de fichier CSV en cliquant sur le deuxième RadioButton :
 
 
-![image](images\2Images\pick_csv.png) 
+![image](images/2Images/pick_csv.png) 
 
 
 
-![image](images\2Images\pick_csv2.png) 
+![image](images/2Images/pick_csv2.png) 
 
 
 Ou :
 
 
-![image](images\2Images\pick_csv_bypath.png) 
+![image](images/2Images/pick_csv_bypath.png) 
     *et cliquez sur le bouton "confirm" et veuillez supprimer les parenthèses !*
 
 #### Insérer les variables indépendantes :
 Maintenant que le fichier CSV est chargé, **insérons les variables indépendantes** (la ou les colonnes qui permettront de prédire l'*axe Y*). Vous pouvez vous appuyer sur l'aperçu du CSV ; une fois terminé, cliquez sur le bouton **"confirm"** ! :
 
-![image](images\2Images\treeview_of_csv.png)
+![image](images/2Images/treeview_of_csv.png)
     *Exemple d'un aperçu (treeview)*
 
 
 
 
-![image](images\2Images\features_2D.png)
+![image](images/2Images/features_2D.png)
     *Notez que les valeurs textuelles ne sont pas valides et déclencheront une erreur*
 
 
-![image](images\2Images\features_3D.png)
+![image](images/2Images/features_3D.png)
     *En 3D (2 features)*
 
 
-![image](images\2Images\features_mt3D.png)
+![image](images/2Images/features_mt3D.png)
     *Avec plus de 2 features*
 
 
@@ -354,7 +354,7 @@ Ensuite, paramétrons les couleurs de notre futur graphique :
 
 
 
-![image](images\2Images\choosing_colours2.png)
+![image](images/2Images/choosing_colours2.png)
     *Il vous suffit de cliquer sur le bouton "pick" et de choisir la couleur de cette façon.*
 
 
@@ -362,7 +362,7 @@ Ensuite, paramétrons les couleurs de notre futur graphique :
 Veuillez noter que si vous avez inséré plus de deux features, il est normal de ne pouvoir personnaliser que deux couleurs, car le graphique n'affichera pas la régression réelle. À la place, il comparera les valeurs prédites et les valeurs réelles sur un graphique 2D.
 
 
-![image](images\2Images\colours_choice_mt3D.png) 
+![image](images/2Images/colours_choice_mt3D.png) 
 
 
 
@@ -385,15 +385,15 @@ Veuillez noter que si vous avez inséré plus de deux features, il est normal de
 
 ##### Petit exemple (image du début) :
 
-![image](images\1Images\Figure_1.png)
+![image](images/1Images/Figure_1.png)
     *En 2D*
 
 
-![image](images\2Images\graph_example_3D.png)
+![image](images/2Images/graph_example_3D.png)
     *En 3D*
 
 
-![image](images\2Images\metrics_3D(2).png)
+![image](images/2Images/metrics_3D(2).png)
     *Graphique de comparaison (plus de 2 features)*
 
 
@@ -404,7 +404,7 @@ Si jamais vous souhaitez télécharger le graphique, cliquez sur le bouton en ba
 
 
 
-![image](images\1Images\image.png)
+![image](images/1Images/image.png)
 
 
 
@@ -412,12 +412,12 @@ Si jamais vous souhaitez télécharger le graphique, cliquez sur le bouton en ba
 
 Cette application vous permettra également de prédire les valeurs que vous saisissez vous-même en bas de l'interface. Quel que soit le nombre de paramètres, il vous suffit d'utiliser un point-virgule pour saisir plusieurs paramètres :
 
-![image](images\2Images\predicting_values2D.png)
+![image](images/2Images/predicting_values2D.png)
     *Avec un paramètre.*
 
 
 
-![image](images\2Images\predicting_valuesmt3D.png)
+![image](images/2Images/predicting_valuesmt3D.png)
     *Avec plusieurs paramètres.*
 
 
@@ -438,7 +438,7 @@ Cette application vous permettra également de prédire les valeurs que vous sai
 >```bash
 >py -(the_version) -m pip install -r requirements.txt
 >```
-> ![image](images\1Images\image_teminal.png)
+> ![image](images/1Images/image_teminal.png)
 
 
 ## Fonctionnement :
