@@ -122,7 +122,7 @@ Please note that if you have inserted more than two features, it is normal to be
     *In 3D*
 
 
-![image](images/2Images/metrics_3D(2).png)
+![image](images/2Images/graph_example_vs.png)
     *Comparing graph (more than 2 features)*
 
 
@@ -393,7 +393,7 @@ Veuillez noter que si vous avez inséré plus de deux features, il est normal de
     *En 3D*
 
 
-![image](images/2Images/metrics_3D(2).png)
+![image](images/2Images/graph_example_vs.png)
     *Graphique de comparaison (plus de 2 features)*
 
 

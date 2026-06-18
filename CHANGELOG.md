@@ -50,6 +50,12 @@ I admit having used AI to create a visually appealing design, as designing one e
 - Replaced backslashes with forward slashes in image paths so that images now load correctly.
 
 
+## [2.0.1.1] - 2026-06-18
+
+### Fixed
+- Replace the image in the comparative chart with the correct version in the README.
+
+
 # Changelog (In french) :
  
 Toutes les modifications notables de ce projet sont documentées ici.
@@ -99,3 +105,9 @@ J'avoue avoir eu recours à l'IA pour créer un design visuellement attractif, c
 
 ### Corrigé
 - Remplacement des antislashs (« \ ») par des slashs (« / ») dans les chemins d'accès des images afin qu'elles se chargent désormais correctement.
+
+
+## [2.0.1.1] - 2026-06-18
+
+### Corrigé
+- Correction du lien vers le graphique comparatif dans le fichier README.
